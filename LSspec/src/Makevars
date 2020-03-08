@@ -1,0 +1,9 @@
+# See Section 1.2.1 "Using 'Makevars'" of Writing R Extensions
+# cran.r-project.org/doc/manuals/R-exts.pdf
+
+PKG_CFLAGS=
+PKG_CPPFLAGS=-Ilibfftw3 -Ilibnfft3
+PKG_LIBS=-lfftw3 -lnfft3
+
+$(SHLIB): LSspec.so
+        
